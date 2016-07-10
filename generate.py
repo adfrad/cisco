@@ -1,16 +1,27 @@
 # generate.py
 # this file will ask which template and generate a config
+#
 
 #!/usr/bin/env python3
 import fileinput
-#import ipaddress #ip address handler
 import re #regex handler
-#import io
-#import sys
 import check_ip_legit #ip legitimacy checker
 
-fileToSearch = r'C:\Users\adam\Documents\GitHub\cisco\templates\5515x-template-single-network.txt'
-fileToSave = open(r'C:\Users\adam\Documents\GitHub\cisco\templates\output.txt',"w")
+'''
+#Dictionary containing files, inputs
+templateOptions = {}
+templateOptions['FileLocation': './templates/5515x-template-single-network.txt' , 'Description': 'Single NIC']
+templateOptions['FileLocation': './templates/5515x-template-double-network.txt' , 'Description': 'Double NIC']
+templateOptions['FileLocation': './templates/5515x-template-triple-network.txt' , 'Description': 'Triple NIC']
+
+
+
+for x in count(templateOptions):
+    print (templateOptions['Description'])
+'''
+
+fileToSearch = r'./templates/5515x-template-single-network.txt'
+fileToSave = open('output.txt',"w")
 
 inside_ip = "256.1.1.1" #force a prompt in the while loop by giving bad address
 outside_ip = "256.1.1.1" #force a prompt in the while loop by giving bad address
