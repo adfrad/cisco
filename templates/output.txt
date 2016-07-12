@@ -1,5 +1,0 @@
-int g0/0
-  ip address 3.4.5.6
-int g0/1
-  ip address 1.2.3.4
-other config

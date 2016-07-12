@@ -1,0 +1,5 @@
+int g0/0
+  ip address <external_ip>
+int g0/1
+  ip address <internal_ip>
+other config
